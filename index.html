@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zwara | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar container">
+      <div class="logo">Zwara</div>
+       <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><i class="fa-solid fa-caret-down"></i><a href="#">Influencer</a></li>
+        <li><i class="fa-regular fa-heart"></i><a href="#">Favourite</a></li>
+        <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Cart</a></li>
+        <li><i class="fa-solid fa-globe"></i><a href="#">العربية</a></li>
+        <button class="btn login-btn">Sign up / Log in</button>
+      </ul>
+      
+    </nav>
+  </header>
+  <script>  const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+  const toggleIcon = toggleBtn.querySelector("i");
+
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+
+    // Change icon
+    if (navLinks.classList.contains("show")) {
+      toggleIcon.classList.replace("fa-bars", "fa-xmark");
+    } else {
+      toggleIcon.classList.replace("fa-xmark", "fa-bars");
+    }
+  });</script>
+  <script>
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector(".header");
+    if (window.scrollY > 0) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  });
+</script>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content container">
+        <h1>Order delicious food from your favorite restaurants.</h1>
+
+        <!-- Search Box -->
+        <div class="search-box">
+          <div class="search-item">
+            <span class="icon">📍</span>
+            <input type="text" placeholder="Kuwait City, Kuwait">
+          </div>
+          <div class="search-item">
+            <span class="icon">🔍</span>
+            <input type="text" placeholder="Search restaurant">
+          </div>
+        </div>
+      </div>
+      <!-- Food Images -->
+      <img src="images/full1-removebg-preview.png" alt="Food Left" class="food-left">
+      <img src="images/full2-removebg-preview.png" alt="Sushi Right" class="food-right">
+    </div>
+  </section>
+
+  <!-- Brand Section -->
+  <!-- <section class="brands container">
+    <p class="brand-heading">Welcome! <span>Let’s Sugar Up!</span></p>
+    <div class="brand-logos">
+      <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+       <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+       <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+        <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+         <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+          <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+           <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+            <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+             <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+              <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+               <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+                <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+                 <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+                  <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+                   <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+                    <div class="logo-item"><img src="images//Pepsi-Symbol.png" alt="Brand"><p>h</p></div>
+  
+    </div>
+  </section> -->
+  <section class="brands container">
+    <p class="brand-heading">Welcome! <span>Let’s Sugar Up!</span></p>
+    
+    <div class="owl-carousel owl-theme">
+      <div class="logo-item"><img src="https://i.pinimg.com/280x280_RS/dd/16/84/dd16847823a453ccbbab865c29586eb6.jpg" alt="Brand"><p>Pepsi</p></div>
+      <div class="logo-item"><img src="images/img3665_14y43x-removebg-preview.png" alt="Brand"><p>Tamra</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2oH0-IV8b7DqQS2avEDMdQSm9Z6uUVSfZjRhAIy9iOvXyavRh" alt="Brand"><p>DGMAA</p></div>
+      <div class="logo-item"><img src="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/oyo/logos/310667642_1455782564891111_8190262316281949552_n_1.jpg" alt="Brand"><p>OYO</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwSxPJcjPsjGeCslXVLe2EC5zqW2852b3BEiWBch6SghqvKkvk" alt="Brand"><p>Hive</p></div>
+      <div class="logo-item"><img src="https://maincdn3.mnasaticdn.com/uploads/vendor_logo_image/15343/logo_15343_1656231383.png" alt="Brand"><p>BI</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaPC53m53Yc6d-xK6VWZSDArPbLroWX4Yx73y3KE7kzr0GE1np" alt="Brand"><p>Ookie</p></div>
+      <div class="logo-item"><img src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/euyzfywlegawxwxkguvd" alt="Brand"><p>Blackeye</p></div>
+     <div class="logo-item"><img src="https://i.pinimg.com/280x280_RS/dd/16/84/dd16847823a453ccbbab865c29586eb6.jpg" alt="Brand"><p>Pepsi</p></div>
+      <div class="logo-item"><img src="images/img3665_14y43x-removebg-preview.png" alt="Brand"><p>Tamra</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2oH0-IV8b7DqQS2avEDMdQSm9Z6uUVSfZjRhAIy9iOvXyavRh" alt="Brand"><p>DGMAA</p></div>
+      <div class="logo-item"><img src="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/oyo/logos/310667642_1455782564891111_8190262316281949552_n_1.jpg" alt="Brand"><p>OYO</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwSxPJcjPsjGeCslXVLe2EC5zqW2852b3BEiWBch6SghqvKkvk" alt="Brand"><p>Hive</p></div>
+      <div class="logo-item"><img src="https://maincdn3.mnasaticdn.com/uploads/vendor_logo_image/15343/logo_15343_1656231383.png" alt="Brand"><p>BI</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaPC53m53Yc6d-xK6VWZSDArPbLroWX4Yx73y3KE7kzr0GE1np" alt="Brand"><p>Ookie</p></div>
+      <div class="logo-item"><img src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/euyzfywlegawxwxkguvd" alt="Brand"><p>Blackeye</p></div>
+      <div class="logo-item"><img src="https://i.pinimg.com/280x280_RS/dd/16/84/dd16847823a453ccbbab865c29586eb6.jpg" alt="Brand"><p>Pepsi</p></div>
+      <div class="logo-item"><img src="images/img3665_14y43x-removebg-preview.png" alt="Brand"><p>Tamra</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2oH0-IV8b7DqQS2avEDMdQSm9Z6uUVSfZjRhAIy9iOvXyavRh" alt="Brand"><p>DGMAA</p></div>
+      <div class="logo-item"><img src="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/oyo/logos/310667642_1455782564891111_8190262316281949552_n_1.jpg" alt="Brand"><p>OYO</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwSxPJcjPsjGeCslXVLe2EC5zqW2852b3BEiWBch6SghqvKkvk" alt="Brand"><p>Hive</p></div>
+      <div class="logo-item"><img src="https://maincdn3.mnasaticdn.com/uploads/vendor_logo_image/15343/logo_15343_1656231383.png" alt="Brand"><p>BI</p></div>
+      <div class="logo-item"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaPC53m53Yc6d-xK6VWZSDArPbLroWX4Yx73y3KE7kzr0GE1np" alt="Brand"><p>Ookie</p></div>
+      <div class="logo-item"><img src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/euyzfywlegawxwxkguvd" alt="Brand"><p>Blackeye</p></div>
+    </div>
+  </section>
+
+  <section class="categories">
+  <div class="category-item">
+    <span class="category-text">OFFERS</span>
+    <span class="category-icon"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7DJav1cZDjqJjKi2qB7vqJu0eYlWcLlRkNfMpUGXJhUBVxblU" alt="Offers"></span>
+  </div>
+  <div class="category-item">
+    <span class="category-text">NEWLY ADDED</span>
+    <span class="category-icon"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ384q1txVXIELaKP9SklBWeafNCd_0gNfCZyaLj_E3GDbhkcz" alt="Newly Added"></span>
+  </div>
+  <div class="category-item">
+    <span class="category-text">DELIVERY</span>
+    <span class="category-icon"><img src="https://png.pngtree.com/png-vector/20220730/ourmid/pngtree-free-tag-icon-icon-iconic-discount-vector-png-image_19333230.png" alt="Delivery"></span>
+  </div>
+  <div class="category-item">
+    <span class="category-text">TRENDS</span>
+    <span class="category-icon"><img src="images/123-removebg-preview.png" alt="Trends"></span>
+  </div>
+  <div class="category-item">
+    <span class="category-text">GIFTS</span>
+    <span class="category-icon"><img src="https://png.pngtree.com/png-vector/20250512/ourlarge/pngtree-another-pink-gift-box-reappears-same-wrapping-and-ribbon-festive-cute-png-image_16213119.png" style="height: 60px; width: 60px;" alt="Gifts"></span>
+  </div>
+  <div class="category-item">
+    <span class="category-text">CATERING</span>
+    <span class="category-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_ldRr7Xv75-Wid9vPrTWxfnG7G1gUuVfrOUlq_N74iIjeFQaVqm2I6jxQpyno9vcbeM&usqp=CAU" alt="Catering"></span>
+  </div>
+   <div class="category-item">
+    <span class="category-text">TRENDS</span>
+    <span class="category-icon"><img src="images/123-removebg-preview.png" alt="Trends"></span>
+  </div>
+  <div class="category-item">
+    <span class="category-text">GIFTS</span>
+    <span class="category-icon"><img src="https://png.pngtree.com/png-vector/20250512/ourlarge/pngtree-another-pink-gift-box-reappears-same-wrapping-and-ribbon-festive-cute-png-image_16213119.png" alt="Gifts" style="height: 60px; width: 60px;"></span>
+  </div>
+  <div class="category-item">
+    <span class="category-text">CATERING</span>
+    <span class="category-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_ldRr7Xv75-Wid9vPrTWxfnG7G1gUuVfrOUlq_N74iIjeFQaVqm2I6jxQpyno9vcbeM&usqp=CAU" alt="Catering"></span>
+  </div>
+    
+  
+</section>
+  
+
+
+<section class="category-strip">
+  <button class="strip-btn prev" aria-label="Scroll left">&#8249;</button>
+
+  <div class="strip-track">
+    <!-- Card -->
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/4.jpg" alt="All Cousins">
+      <span>All Cousins</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/1.jpg" alt="Cookies">
+      <span>Cookies</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/2.jpg" alt="Cheesecake">
+      <span>Cheesecake</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/3.jpg" alt="Waffle">
+      <span>Waffle</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/5.jpg" alt="Bakery">
+      <span>Bakery</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/6.jpg" alt="Donut">
+      <span>Donut</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/7.jpg" alt="Coffee">
+      <span>Coffee</span>
+    </a>
+   <a class="strip-card" href="#">
+      <img class="thumb" src="images/4.jpg" alt="All Cousins">
+      <span>All Cousins</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/1.jpg" alt="Cookies">
+      <span>Cookies</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/2.jpg" alt="Cheesecake">
+      <span>Cheesecake</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/3.jpg" alt="Waffle">
+      <span>Waffle</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/5.jpg" alt="Bakery">
+      <span>Bakery</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/6.jpg" alt="Donut">
+      <span>Donut</span>
+    </a>
+    <a class="strip-card" href="#">
+      <img class="thumb" src="images/7.jpg" alt="Coffee">
+      <span>Coffee</span>
+    </a>
+    <!-- add more as needed -->
+  </div>
+
+  <button class="strip-btn next" aria-label="Scroll right">&#8250;</button>
+</section>
+
+
+
+<section class="restaurant-section">
+  <div class="section-header">
+    <h2>Top Restaurants Near You</h2>
+    <div class="nav-btns">
+      <button class="rest-btn prev">&#8249;</button>
+      <button class="rest-btn next">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="restaurant-track">
+    <!-- Restaurant Card -->
+    <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+      <!-- Closed Example -->
+    <div class="restaurant-card closed">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="The Bakery Blere">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <div class="closed-badge">Closed</div>
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>The Bakery Blere</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+    <!-- Another Card -->
+    <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Ookie Cookie">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Ookie Cookie</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+      <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+      <!-- Closed Example -->
+    <div class="restaurant-card closed">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="The Bakery Blere">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <div class="closed-badge">Closed</div>
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>The Bakery Blere</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+    <!-- Another Card -->
+    <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Ookie Cookie">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Ookie Cookie</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="offer-main">
+ <!-- 🔥 Offer Section Start -->
+<div class="offer-section">
+  <!-- Left Button -->
+  <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+
+  <!-- Slider Container -->
+  <div class="offer-slider" id="offerSlider">
+    <div class="offer-card">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/21/60/ba/d8/polpette-di-melanzane.jpg" alt="Offer 1">
+      <div class="discount-badge">25%<br>Off</div>
+    </div>
+     <div class="offer-card">
+      <img src="https://media.istockphoto.com/id/1147950819/photo/strawberry-ice-cream-cup-on-white-table-homemade-in-kitchen.jpg?s=612x612&w=0&k=20&c=5DZHV-QaqhKvk5eN6uxGYSTxIaOt-KxzETq4FYMzCH0=" alt="Offer 1">
+      <div class="discount-badge">25%<br>Off</div>
+    </div>
+     <div class="offer-card">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/049/333/437/small/freshly-baked-cinnamon-roll-on-pink-background-photo.jpg" alt="Offer 1">
+      <div class="discount-badge">25%<br>Off</div>
+    </div>
+    <div class="offer-card">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/21/60/ba/d8/polpette-di-melanzane.jpg" alt="Offer 1">
+      <div class="discount-badge">25%<br>Off</div>
+    </div>
+     <div class="offer-card">
+      <img src="https://media.istockphoto.com/id/1147950819/photo/strawberry-ice-cream-cup-on-white-table-homemade-in-kitchen.jpg?s=612x612&w=0&k=20&c=5DZHV-QaqhKvk5eN6uxGYSTxIaOt-KxzETq4FYMzCH0=" alt="Offer 1">
+      <div class="discount-badge">25%<br>Off</div>
+    </div>
+     <div class="offer-card">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/049/333/437/small/freshly-baked-cinnamon-roll-on-pink-background-photo.jpg" alt="Offer 1">
+      <div class="discount-badge">25%<br>Off</div>
+    </div>
+  </div>
+
+  <!-- Right Button -->
+  <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+</div>
+</section>
+
+
+
+
+<section class="restaurant-section restaurant-two ">
+<div style=" margin: 0 auto; width: 95%;">
+  <div class="section-header">
+    <h2>Our Influencers</h2>
+    <div class="nav-btns">
+      <button class="rest-btn prev">&#8249;</button>
+      <button class="rest-btn next">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="restaurant-track">
+    <!-- Restaurant Card -->
+    <div class="restaurant-card ">
+      <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+    <div class="restaurant-card ">
+      <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+    <div class="restaurant-card ">
+      <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+    <div class="restaurant-card ">
+      <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+    <div class="restaurant-card ">
+      <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+        <div class="restaurant-card">
+      <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+        <div class="restaurant-card">
+      <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+      <!-- Closed Example -->
+    <div class="restaurant-card ">
+            <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+    <div class="restaurant-card">
+            <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+    <!-- Another Card -->
+    <div class="restaurant-card">
+            <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+    </div>
+     <div class="restaurant-card">
+        <img src="https://i.pinimg.com/736x/9a/e5/25/9ae5254fd537be6a73989b1dec84a91e.jpg" alt="">
+     </div>
+  </div>
+</div>
+
+</section>
+
+
+<section class="restaurant-section">
+  <div class="section-header">
+    <h2>Picked For You</h2>
+    <div class="nav-btns">
+      <button class="rest-btn prev">&#8249;</button>
+      <button class="rest-btn next">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="restaurant-track">
+    <!-- Restaurant Card -->
+    <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+      <!-- Closed Example -->
+    <div class="restaurant-card closed">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="The Bakery Blere">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <div class="closed-badge">Closed</div>
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>The Bakery Blere</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+    <!-- Another Card -->
+    <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Ookie Cookie">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Ookie Cookie</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="restaurant-section " style="background-color: #ffe4ec; margin: 0; width: 100%;">
+<div style=" margin: 0 auto; width: 95%;">
+  <div class="section-header">
+    <h2>Chocolate lovers</h2>
+    <div class="nav-btns">
+      <button class="rest-btn prev">&#8249;</button>
+      <button class="rest-btn next">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="restaurant-track">
+    <!-- Restaurant Card -->
+    <div class="restaurant-card restaurant-card-two ">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+       
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+      <!-- Closed Example -->
+    <div class="restaurant-card restaurant-card-two">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="The Bakery Blere">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>The Bakery Blere</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card restaurant-card-two">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+    <!-- Another Card -->
+    <div class="restaurant-card restaurant-card-two">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Ookie Cookie">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Ookie Cookie</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+    <div class="restaurant-card restaurant-card-two">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+  </div>
+</div>
+</section>
+  
+
+
+<section class="restaurant-section">
+  <div class="section-header">
+    <h2>Delicious Deals</h2>
+    <div class="nav-btns">
+      <button class="rest-btn prev">&#8249;</button>
+      <button class="rest-btn next">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="restaurant-track">
+    <!-- Restaurant Card -->
+    <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+      <!-- Closed Example -->
+    <div class="restaurant-card closed">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="The Bakery Blere">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <div class="closed-badge">Closed</div>
+        <div class="preorder">PREORDER FOR LATER</div>
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>The Bakery Blere</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+    <!-- Another Card -->
+    <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Ookie Cookie">
+
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Ookie Cookie</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+     <div class="restaurant-card">
+      <div class="image-wrap">
+        <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Feeling Sugar">
+
+        <!-- Restaurant Logo -->
+        <div class="rest-logo">
+          <img src="https://images.meesho.com/images/products/28599777/ddb0a_512.avif?width=512" alt="Logo">
+        </div>
+
+        <!-- Like Button -->
+        <button class="like-btn"></button>
+      </div>
+      <div class="card-content">
+        <h3>Feeling Sugar</h3>
+        <p>Chinese, Mongolian, Noodles, Soup</p>
+        <div class="meta">
+          <span>24-34 min</span>
+          <span>1.4 km</span>
+          <span>KD 1.00</span>
+          <span class="rating">★ 4.5</span>
+        </div>
+      </div>
+      <div class="offer">40% off on orders above KD 4.00</div>
+    </div>
+  </div>
+</section>
+
+<section class="app-section">
+  <div class="app-content">
+    <div class="app-text">
+      <h2>Mobile App</h2>
+      <p>
+        Download the ZWARA app on your mobile device for a more convenient and
+        efficient ordering and delivery experience
+      </p>
+
+      <div class="app-buttons">
+        <a href="#">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+        <a href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </a>
+      </div>
+    </div>
+
+    <div class="app-mockups">
+      <!-- <img src="https://dreamertechnoland.com/wp-content/uploads/2025/04/react-mani-image.webp" alt="App Screen 1" class="phone phone1"> -->
+      <!-- <img src="https://i.ibb.co/QYzLwpR/phone2.png" alt="App Screen 2" class="phone phone2"> -->
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Popular -->
+    <div class="footer-col">
+      <h4>POPULAR</h4>
+      <ul>
+        <li><a href="#">Healthy</a></li>
+        <li><a href="#">Milk Shake</a></li>
+        <li><a href="#">Cheesecake</a></li>
+        <li><a href="#">Frozen Yoghurt</a></li>
+        <li><a href="#">Waffle</a></li>
+        <li><a href="#">Coffee</a></li>
+        <li><a href="#">Arabic Sweet</a></li>
+      </ul>
+    </div>
+
+    <!-- Explore -->
+    <div class="footer-col">
+      <h4>EXPLORE</h4>
+      <ul>
+        <li><a href="#">Influencer</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Newly Added</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Trends</a></li>
+        <li><a href="#">Ya Hala</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Account -->
+    <div class="footer-col">
+      <h4>CUSTOMER ACCOUNT</h4>
+      <ul>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Gifts</a></li>
+        <li><a href="#">Invite Friends</a></li>
+        <li><a href="#">Favourites</a></li>
+        <li><a href="#">Addresses</a></li>
+        <li><a href="#">My Loyalty</a></li>
+        <li><a href="#">Zwara Credits</a></li>
+      </ul>
+    </div>
+
+    <!-- Help & Support -->
+    <div class="footer-col">
+      <h4>HELP & SUPPORT</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#">How to Order</a></li>
+        <li><a href="#">Privacy Statement</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Data Deletion Policy</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="footer-col">
+      <h4>CONTACT US</h4>
+      <p>Whatsapp Us: +965 869878955</p>
+      <p>Call Us On: +965 869878955</p>
+      <p>Email: info@zwara.com</p>
+      <p>8:00 AM to 8:00 PM, 365 days</p>
+      <p>Should you encounter any bugs, delayed deliveries, or other problems on the website.</p>
+    </div>
+
+    <!-- Download App -->
+    <div class="footer-col">
+      <h4>DOWNLOAD THE APP</h4>
+      <div class="app-badges">
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p> <strong>Zwara</strong> © 2025. All Rights Reserved.</p>
+   <div class="social-icons">
+  <span>FOLLOW US:</span>
+  <a class="social" href="#"><i class="fab fa-whatsapp"></i></a>
+  <a class="social" href="#"><i class="fab fa-twitter"></i></a>
+  <a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
+  <a class="social" href="#"><i class="fab fa-instagram"></i></a>
+</div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: false,          // ✅ Auto slide
+        autoplayTimeout: 2000,   // 2s delay
+        autoplayHoverPause: true, // Stop on hover
+        mouseDrag: true,         // ✅ Drag left-right with mouse
+        touchDrag: true,         // ✅ Swipe on mobile
+        responsive: {
+          400: { items: 4 },
+          600: { items: 9 },
+          1000: { items: 12 },
+          1025:{ items:15 }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
