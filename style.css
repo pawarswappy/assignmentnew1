@@ -322,7 +322,7 @@ body {
     top: -24% !important;
     height: 400px;
     width: 400px;
-    background-image: url(../images/new-removebg-preview.png);
+    background-image: url(new-removebg-preview.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -795,7 +795,7 @@ body {
   top: -26%;
   height: 400px;
   width: 400px;
-  background-image: url("../images/new-removebg-preview.png");
+  background-image: url("new-removebg-preview.png");
   background-size: contain;  /* make sure it fits */
   background-repeat: no-repeat;
   background-position: center;
@@ -849,7 +849,7 @@ body {
   
   height: 320px;
   width: 260px;
-  background-image: url("../images/new-removebg-preview.png");
+  background-image: url("new-removebg-preview.png");
   background-size: contain;  /* make sure it fits */
   background-repeat: no-repeat;
   background-position: center;
@@ -1090,3 +1090,4 @@ body {
     flex: 0 0 100% !important;
 }
 }
+
