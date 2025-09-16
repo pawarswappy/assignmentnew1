@@ -165,6 +165,11 @@ body {
   text-align: center;
   border: none;
   /* height: 55vh; */
+  background-image: url(" https://pawarswappy.github.io/assignmentnew1/full1-removebg-preview.png");
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero h1 {
