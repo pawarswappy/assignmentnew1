@@ -165,10 +165,6 @@ body {
   text-align: center;
   border: none;
   /* height: 55vh; */
- 
- 
-
-
 }
 
 .hero h1 {
@@ -356,7 +352,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
     }
-
+    }
     @media (max-width: 480px) {
       .logo-item img { 
         width: 70px !important;
@@ -1101,6 +1097,7 @@ body {
     flex: 0 0 100% !important;
 }
 }
+
 
 
 
