@@ -158,18 +158,14 @@ body {
 .hero {
   position: relative;
   /* background: linear-gradient(135deg, #f44336, #e91e63); */
-/*   background-color: #d51b57; */
+  background-color: #d51b57;
   color: #fff;
   padding: 6rem 0 6rem;
   overflow: hidden;
   text-align: center;
   border: none;
   /* height: 55vh; */
-  background-image: url("why-removebg-preview.png");
-  object-fit: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
+
 }
 
 .hero h1 {
@@ -1058,6 +1054,13 @@ body {
   .hero h1 {
     font-size: 1.6rem;
   }
+  .hero {
+  background-image: url("why-removebg-preview.png");
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
   .search-box {
     flex-direction: column;
@@ -1095,5 +1098,6 @@ body {
     flex: 0 0 100% !important;
 }
 }
+
 
 
