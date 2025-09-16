@@ -166,11 +166,7 @@ body {
   border: none;
   /* height: 55vh; */
  
-  background-image: url("why-removebg-preview.png");
-  object-fit: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
+ 
 
 
 }
@@ -353,6 +349,12 @@ body {
       .logo-item p {
          font-size: 0.7rem;
          }
+      .hero{
+         background-image: url("why-removebg-preview.png");
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
     }
 
     @media (max-width: 480px) {
@@ -1099,6 +1101,7 @@ body {
     flex: 0 0 100% !important;
 }
 }
+
 
 
 
